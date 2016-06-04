@@ -82,4 +82,7 @@
      nuget pack $(ProjectDir)Bridge.Pages.csproj -OutputDirectory $(ProjectDir)nuget
 )</PostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>nuget restore $(ProjectDir)</PreBuildEvent>
+  </PropertyGroup>
 </Project>
