@@ -21,7 +21,7 @@ install:
 
 before_build:
   - ps: |
-      nuget restore src/Bridge.AWS.sln
+      nuget restore src/Bridge.Pages.sln
       $content = (Get-Content src/Bridge.Pages.nuspec) 
       $content = $content -replace '\$version\$',${env:APPVEYOR_BUILD_VERSION}
       $content | Out-File src/Bridge.Pages.nuspec
