@@ -236,3 +236,5 @@ _Pvt_Extensions
 .fake/
 /src/packages
 /src/nuget
+/src/Bridge/www/bridge.pages/bin/bridge.min.js
+/src/Bridge/www/bridge.pages/bin/bridge.js
